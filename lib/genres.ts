@@ -1,0 +1,60 @@
+export const ALL_GENRES = [
+  "Action",
+  "Adventure",
+  "Animation",
+  "Biography",
+  "Comedy",
+  "Crime",
+  "Documentary",
+  "Drama",
+  "Family",
+  "Fantasy",
+  "History",
+  "Horror",
+  "Kids",
+  "Music",
+  "Mystery",
+  "Reality",
+  "Romance",
+  "Sci-Fi",
+  "Sports",
+  "Thriller",
+  "War",
+  "Western",
+  "Indian Cinema", // Added this as a distinct category if needed, or can be a genre
+] as const // Use "as const" for stricter typing
+
+export type Genre = (typeof ALL_GENRES)[number]
+
+// You can also define specific genres for movies and TV shows if they differ
+export const MOVIE_GENRES: Genre[] = [
+  "Action",
+  "Adventure",
+  "Comedy",
+  "Crime",
+  "Drama",
+  "Fantasy",
+  "History",
+  "Horror",
+  "Mystery",
+  "Romance",
+  "Sci-Fi",
+  "Sports",
+  "Thriller",
+  "Indian Cinema",
+]
+export const TV_SHOW_GENRES: Genre[] = [
+  "Action",
+  "Animation",
+  "Comedy",
+  "Crime",
+  "Documentary",
+  "Drama",
+  "Family",
+  "Fantasy",
+  "Kids",
+  "Mystery",
+  "Reality",
+  "Sci-Fi",
+  "Thriller",
+]
